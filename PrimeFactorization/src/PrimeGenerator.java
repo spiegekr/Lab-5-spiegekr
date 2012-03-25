@@ -5,6 +5,14 @@ public class PrimeGenerator {
 
 	
 	public static ArrayList<Integer> generatePrimes (int n) {
-		return new ArrayList ();
+		ArrayList<Integer> ret = new ArrayList<Integer> ();
+		
+		
+		if(n > 2){
+			ret.add(2);	
+		}
+		
+		
+		return ret;
 	}
 }
