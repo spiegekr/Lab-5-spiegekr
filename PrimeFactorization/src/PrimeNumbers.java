@@ -6,11 +6,14 @@ public class PrimeNumbers {
 	 
 	ArrayList<Integer> ret = new ArrayList<Integer>();
 	
-	while(n % 2 == 0){
-		ret.add(2);
-		n /= 2;
-	}
+	for (int candidate = 2; n > 1; candidate++){
+		
 	
+	while(n % candidate == 0){
+		ret.add(candidate);
+		n /= candidate;
+	}
+	}
 	if (n > 1){
 		ret.add(n);
 	}
