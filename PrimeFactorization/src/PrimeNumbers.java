@@ -9,14 +9,11 @@ public class PrimeNumbers {
 	for (int candidate = 2; n > 1; candidate++){
 		
 	
-	while(n % candidate == 0){
+	for (;n % candidate == 0;n /= candidate){
 		ret.add(candidate);
-		n /= candidate;
 	}
 	}
-	if (n > 1){
-		ret.add(n);
-	}
+	
 	return ret;
  }
 } 
