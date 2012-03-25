@@ -19,7 +19,12 @@ public class PrimeGeneratorTest {
 	
 	@Test
 	public void testTwo() {
-		assertEquals (list(), PrimeGenerator.generatePrimes(1));
+		assertEquals (list(), PrimeGenerator.generatePrimes(2));
+	}
+	
+	@Test
+	public void testThree() {
+		assertEquals (list(2), PrimeGenerator.generatePrimes(3));
 	}
 	
 	private ArrayList<Integer> list (int... ints) {
