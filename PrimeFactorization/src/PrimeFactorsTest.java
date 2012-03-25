@@ -48,6 +48,12 @@ public void testNine() {
 	assertEquals (list(3, 3), PrimeNumbers.generatePrimes(9));
 }
 
+@Test
+public void testTen() {
+	assertEquals (list(2, 5), PrimeNumbers.generatePrimes(10));
+}
+
+
 private ArrayList<Integer> list (int... ints) {
 	ArrayList<Integer> ret = new ArrayList<Integer>();
 	for(int i : ints){
