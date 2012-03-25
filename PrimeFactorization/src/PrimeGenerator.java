@@ -18,6 +18,7 @@ public class PrimeGenerator {
 			if (divs == 0){
 				ret.add(candidate);
 			}
+			divs = 0;
 		}
 	
 		
