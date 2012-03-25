@@ -28,6 +28,10 @@ public void testThree() {
 }
 
 
+@Test
+public void testFour() {
+	assertEquals (list(2, 2), PrimeNumbers.generatePrimes(3));
+}
 
 
 
